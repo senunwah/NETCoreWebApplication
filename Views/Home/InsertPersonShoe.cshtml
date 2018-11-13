@@ -1,0 +1,40 @@
+﻿@model NETCoreWebApplication.Models.BuyShoeModel
+@using NETCoreWebApplication.Controllers;
+@{
+    ViewData["Title"] = "View";
+    HomeController hc = new HomeController();
+}
+
+<h2>View</h2>
+
+<h4>Buy Shoes</h4>
+<hr />
+<div class="container">
+    @using (Html.BeginForm("BuyShoe", "Home", FormMethod.Post, new { enctype = "multipart/formdata" }))
+    {
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <form asp-action="View">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.PersonName)
+                        @Html.DropDownListFor(x => x.PersonName,hc.Persons,"Select Person", new { @class = "form-control", style = "border-right-style:none; border-left-style:none; border-top-style:none;" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.ShoeName)
+                        @Html.DropDownListFor(x => x.ShoeName, hc.Shoes, "Select Person", new { @class = "form-control", style = "border-right-style:none; border-left-style:none; border-top-style:none;" })
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-success btn-effect" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    }
+</div>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
