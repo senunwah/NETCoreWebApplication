@@ -1,0 +1,54 @@
+﻿@using NETCoreWebApplication.Models
+@using NETCoreWebApplication.Controllers
+@model InsertPersonShoeModel
+@{
+    ViewData["Title"] = "Insert";
+    HomeController hc = new HomeController();
+    
+}
+
+<div class="container" style="padding-top:70px;">
+    @using (Html.BeginForm("Insert", "Home", FormMethod.Post, new { enctype = "multipart/formdata" }))
+    {
+        <h2>Insert Person & Shoe</h2>
+        <hr />
+        <div class="row ">
+            <div class="col-md-8 jumbotron">
+                <div class="col-md-6" style="padding-right:20px;">
+                    <div class="form-horizontal ">
+                        <div class="form-group">
+                            @Html.LabelFor(x => x.Name)
+                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control", style = "border-right-style:none; border-left-style:none; border-top-style:none;" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(x => x.Age)
+                            @Html.DropDownListFor(x => x.Age, hc.AgeList, "Select Age", new { @class = "form-control", style = "border-right-style:none; border-left-style:none; border-top-style:none;" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(x => x.Gender)
+                            @Html.DropDownListFor(x => x.Gender, hc.GenderList, "Select Gender", new { @class = "form-control", style = "border-right-style:none; border-left-style:none; border-top-style:none;" })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-horizontal" style="padding-right:30px;">
+                        <div class="form-group">
+                            @Html.LabelFor(x => x.ShoeName)
+                            @Html.TextBoxFor(x => x.ShoeName, new { @class = "form-control", style = "border-right-style:none; border-left-style:none; border-top-style:none;" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(x => x.ShoeBrand)
+                            @Html.TextBoxFor(x => x.ShoeBrand, new { @class = "form-control", style = "border-right-style:none; border-left-style:none; border-top-style:none;" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button role="button" class="btn btn-success btn-effect" value="Register">
+                <span>INSERT RECORD</span>
+            </button>
+        </div>
+    }
+</div>
+

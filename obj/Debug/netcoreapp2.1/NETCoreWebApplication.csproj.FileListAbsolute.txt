@@ -27,9 +27,12 @@ C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NET
 C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\obj\Debug\netcoreapp2.1\NETCoreWebApplication.dll
 C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\obj\Debug\netcoreapp2.1\NETCoreWebApplication.pdb
 C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\obj\Debug\netcoreapp2.1\NETCoreWebApplication.csproj.CopyComplete
-C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\bin\Debug\netcoreapp2.1\ClassLibrary.dll
-C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\bin\Debug\netcoreapp2.1\ClassLibrary.pdb
-C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\InsertPerson.g.cshtml.cs
-C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\InsertShoe.g.cshtml.cs
 C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
-C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\BuyShoe.g.cshtml.cs
+C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\bin\Debug\netcoreapp2.1\PersonShoeLib.dll
+C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\bin\Debug\netcoreapp2.1\PersonShoeLib.pdb
+C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\bin\Debug\netcoreapp2.1\DataLibrary.dll
+C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\bin\Debug\netcoreapp2.1\DataLibrary.pdb
+C:\Users\Stephen\Documents\Visual Studio 2017\Projects\NETCoreWebApplication\NETCoreWebApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Insert.g.cshtml.cs

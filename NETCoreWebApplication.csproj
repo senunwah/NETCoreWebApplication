@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DataLibrary\DataLibrary.csproj" />
     <ProjectReference Include="..\PersonShoeLib\PersonShoeLib.csproj" />
   </ItemGroup>
 

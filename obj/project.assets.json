@@ -4633,6 +4633,16 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "DataLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/DataLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataLibrary.dll": {}
+        }
+      },
       "PersonShoeLib/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -12300,6 +12310,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "DataLibrary/1.0.0": {
+      "type": "project",
+      "path": "../DataLibrary/DataLibrary.csproj",
+      "msbuildProject": "../DataLibrary/DataLibrary.csproj"
+    },
     "PersonShoeLib/1.0.0": {
       "type": "project",
       "path": "../PersonShoeLib/PersonShoeLib.csproj",
@@ -12308,6 +12323,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "DataLibrary >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -12346,6 +12362,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\Users\\Stephen\\Documents\\Visual Studio 2017\\Projects\\NETCoreWebApplication\\DataLibrary\\DataLibrary.csproj": {
+              "projectPath": "C:\\Users\\Stephen\\Documents\\Visual Studio 2017\\Projects\\NETCoreWebApplication\\DataLibrary\\DataLibrary.csproj"
+            },
             "C:\\Users\\Stephen\\Documents\\Visual Studio 2017\\Projects\\NETCoreWebApplication\\PersonShoeLib\\PersonShoeLib.csproj": {
               "projectPath": "C:\\Users\\Stephen\\Documents\\Visual Studio 2017\\Projects\\NETCoreWebApplication\\PersonShoeLib\\PersonShoeLib.csproj"
             }

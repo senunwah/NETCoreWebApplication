@@ -1,20 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using DataLibrary;
 using Microsoft.AspNetCore.Mvc;
-using NETCoreWebApplication.Models;
-using ClassLibrary;
-using System.Threading;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Data.SqlClient;
+using System.Collections.Generic;
+using NETCoreWebApplication.Models;
+using System.Threading;
 
 namespace NETCoreWebApplication.Controllers
 {
     public class HomeController : Controller
     {
-        
+        PersonDataList pdl = new PersonDataList();
+        Person p = new Person();
+        Shoe s = new Shoe();
+        PersonShoe ps = new PersonShoe();
+        public List<SelectListItem> AgeList, GenderList;
+
+        public HomeController()
+        {
+            pdl.GetList();
+            AgeList = pdl.AgeList;
+            GenderList = pdl.GenderList;
+        }
+
        
         public IActionResult Index()
         {
@@ -22,26 +29,34 @@ namespace NETCoreWebApplication.Controllers
         }
         
         
-        public IActionResult InsertPerson()
+        public IActionResult Insert()
         {
-            
             return View();
         }
 
-        
-        public IActionResult InsertShoe()
+        [HttpPost]
+        public IActionResult Insert(InsertPersonShoeModel model)
         {
-            
-            return View();
+            Thread t = new Thread(() => p.InsertPerson(model.Name, model.Age.ToString(), model.Gender));
+            t.Start();
+
+            Thread d = new Thread(() => s.InsertShoe(model.ShoeName, model.ShoeBrand));
+            d.Start();
+
+            Thread f = new Thread(()=> PersonShoe(model));
+            f.Start();
+
+            ModelState.Clear();
+
+            return View(new InsertPersonShoeModel());
         }
 
-        
-        public IActionResult InsertPersonShoe()
+        public void PersonShoe(InsertPersonShoeModel model)
         {
-            
-            return View();
+            ps.GetPersonID(model.Name);
+            ps.GetShoeID(model.ShoeName, model.ShoeBrand);
+            ps.InsertID();
         }
-
 
     }
 }

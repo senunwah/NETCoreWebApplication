@@ -24,13 +24,13 @@
     ".NETCoreApp,Version=v2.1": {
       "NETCoreWebApplication/1.0.0": {
         "dependencies": {
-          "ClassLibrary": "1.0.0",
-          "Dapper": "1.50.5",
+          "DataLibrary": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.0.1916590",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1",
+          "PersonShoeLib": "1.0.0"
         },
         "runtime": {
           "NETCoreWebApplication.dll": {}
@@ -535,12 +535,24 @@
         }
       },
       "System.Reflection.TypeExtensions/4.4.0": {},
-      "ClassLibrary/1.0.0": {
+      "DataLibrary/1.0.0": {
         "runtime": {
-          "ClassLibrary.dll": {}
+          "DataLibrary.dll": {}
         },
         "compile": {
-          "ClassLibrary.dll": {}
+          "DataLibrary.dll": {}
+        }
+      },
+      "PersonShoeLib/1.0.0": {
+        "dependencies": {
+          "Dapper": "1.50.5",
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "runtime": {
+          "PersonShoeLib.dll": {}
+        },
+        "compile": {
+          "PersonShoeLib.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3687,7 +3699,12 @@
       "path": "system.reflection.typeextensions/4.4.0",
       "hashPath": "system.reflection.typeextensions.4.4.0.nupkg.sha512"
     },
-    "ClassLibrary/1.0.0": {
+    "DataLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PersonShoeLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
