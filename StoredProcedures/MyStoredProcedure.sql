@@ -5,30 +5,33 @@ CREATE PROCEDURE InsertShoe
 )
 AS
 BEGIN
-	INSERT INTO Shoe (Name, Brand)
+	INSERT INTO Shoe ([Name], Brand)
 	VALUES(@Name, @Brand)
 END
 GO
 
-CREATE PROC [dbo].[InsertPerson]
+CREATE PROC InsertPerson
+(
 	@Name nvarchar(50),
+	@Age int,
 	@Gender nchar(1)
+)
 
 AS
 BEGIN
-	INSERT INTO Person([Name], Gender)
-		VALUES(@Name, @Gender)
+	INSERT INTO Person([Name],Age, Gender)
+		VALUES(@Name,@Age,@Gender)
 END
 GO
 
 
 CREATE PROCEDURE InsertPersonShoe
 (
-@Name Nvarchar(30),
-@Age int,
-@Gender Nchar(1),
-@ShoeName nvarchar(20),
-@ShoeBrand nvarchar(20)
+	@Name Nvarchar(30),
+	@Age int,
+	@Gender Nchar(1),
+	@ShoeName nvarchar(20),
+	@ShoeBrand nvarchar(20)
 )
 
 AS
